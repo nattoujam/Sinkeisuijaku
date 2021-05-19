@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>神経衰弱</title>
+    <link rel='stylesheet' href='css/main.css'>
+    <style>
+      * {
+        cursor: url(img/cursor/cursor_<%- color %>.png) 0 0, pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nickname' nickname='<%= nickname %>'></div> 
+    <div id='cursor_color' color='<%- color %>'></div>
+
+    <header>
+      <h1><%= nickname %></h1>
+
+      <img src='img/card/card.png' class='card'id='test_card' face='down' width='100px'/>
+      <figure>
+        <img src='img/test/waku.png' class='waku' name='test_space' width='120px' height='70px'/>
+        <figcaption>テスト用カード</figcaption>
+      </figure>
+    </header>
+
+    <div class='cursor_container'>
+      <ul>
+        <li><img src='img/cursor/cursor_yellow.png' id='cursor_1' class='cursor'/></li>
+        <li><img src='img/cursor/cursor_pink.png' id='cursor_2' class='cursor'/></li>
+        <li><img src='img/cursor/cursor_green.png' id='cursor_3' class='cursor'/></li>
+        <li><img src='img/cursor/cursor_red.png' id='cursor_4' class='cursor'/></li>
+      </ul>
+    </div>
+
+    <div class='card_list'>
+      <ul>
+        <%- card_list %>
+      </ul>
+    </div>
+
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='js/client.js'></script>
+    <script src='js/card.js'></script>
+    <script src='js/show_cursor.js'></script>
+  </body>
+</html>	

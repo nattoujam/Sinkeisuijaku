@@ -1,0 +1,58 @@
+/* 相対パスはcss基準で */
+
+body {
+  /* cursor: url(../cursor/cursor_red.png) 0 0, pointer; */
+  background-color: gray;
+}
+
+figure {
+  text-align: center;
+  display: table;
+  padding: 5px;
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  background-color: white;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.horizontal {
+  width: 400px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.cursor_container {
+  list-style-type: none;
+  padding: 0px;
+}
+.cursor_container ul {
+  list-style-type: none;
+  display: flex;
+}
+.cursor_container ul li {
+  margin-left: 10px;
+}
+
+.cursor {
+  mask-image: url(../img/cursor/cursor_yellow.png);
+  -webkit-mask-image: url(../img/cursor/cursor_yellow.png);
+  z-index: 100;
+}
+
+.card_list ul {
+  list-style-type: none;
+}
+
