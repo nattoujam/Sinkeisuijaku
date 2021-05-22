@@ -12,7 +12,7 @@ const app = express();
 const server = http.Server(app);
 const io = socketIO(server);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 63000;
 
 let player = 0;
 // let lock = new alock();
